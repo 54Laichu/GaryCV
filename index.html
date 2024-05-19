@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laichu's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">GaryLai's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="#introduction">關於我</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#projects">專案分享</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#past-experiences">工作經歷</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Personal Introduction -->
+    <section  id="introduction" class="container mt-5">
+      <img src="https://yt3.googleusercontent.com/JG7Rp7T8qUvSEMzp7pfafR9zu0x0TcRxLx0_51_3Upum8PBRycQLE2Xe2qN4BtFBFzuxkmC7Nw=s176-c-k-c0x00ffffff-no-rj" alt="Your Headshot" class="img-fluid rounded-circle">
+      <h5>姓名：賴益楚 Gary Lai</h5>
+      <h5>Email：machi123j@gmail.com</h5>
+      <h5>Github：<a href="https://github.com/54Laichu" target="_blank">連結<i class="fab fa-github"></i></a></h5>
+      <h5>經歷簡述：</h5>
+      <p>曾任職教育產業專案經理、Rails 後端工程師、臺北市政府資訊局及台北市電腦公會。</p>
+      <p>樂於團隊合作，喜歡透過不同平台上線上課程。</p>
+
+      <h5>習得技能</h5>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fab fa-ruby"></i>
+            <p>Ruby on Rails</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fab fa-js"></i>
+            <p>Vanilla JavaScript</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fas fa-database"></i>
+            <p>Basic MySQL</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fas fa-database"></i>
+            <p>Basic PostgreSQL</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fab fa-docker"></i>
+            <p>Basic Docker</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-block">
+          <div class="skill-tile">
+            <i class="fas fa-python"></i>
+            <p>Basic Python FastAPI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+      <h1>專案分享</h1>
+      <p>以下是近期完成的專案，請參考（陸續更新中）。</p>
+      <!-- Example Project -->
+      <div class="row">
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="https://github.com/54Laichu/quality-of-life-survey/blob/main/demo-readme.gif?raw=true" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">互動式生活品質量表問卷</h5>
+              <p class="card-text">利用 JS 設計卡片功能問卷，填寫完畢後計算結果。</p>
+              <a href="https://github.com/54Laichu/quality-of-life-survey" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="https://github.com/54Laichu/snakeGame/blob/main/snakeGame.gif?raw=true" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">貪食蛇遊戲</h5>
+              <p class="card-text">利用 JS 設計類似貪食蛇遊戲，可以穿牆壁並吃食物。</p>
+              <a href="https://github.com/54Laichu/snakeGame" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="https://github.com/54Laichu/pingpongGame/blob/main/pingpongGame.gif?raw=true" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">乒乓球遊戲</h5>
+              <p class="card-text">利用 JS Canvas 設計批乓球遊戲，可以改變難度。</p>
+              <a href="https://github.com/54Laichu/pingpongGame" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="https://github.com/54Laichu/radarMap/blob/main/radarMap.gif?raw=true" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">雷達圖</h5>
+              <p class="card-text">利用 JS Canvas 遊戲雷達圖，可以即時顯示圖表數值。</p>
+              <a href="https://github.com/54Laichu/radarMap" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="https://user-images.githubusercontent.com/92966004/150624823-ddd357b3-08ef-4085-b70f-7b44491570fa.gif" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">Bootcamp 專案</h5>
+              <p class="card-text">與組員利用 Rails 復刻 EZtable 線上訂位平台。</p>
+              <a href="https://github.com/ASTROCampNineLittle/EZeat" class="btn btn-primary">See Project</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="past-experiences" class="container mt-5">
+        <h1>工作經歷</h1>
+        <div>
+          <h5>萬通教育股份有限公司  •  講師  SEP. 2023 - </h5>
+          <ul>
+            <li>線上教育平台專任講師。</li>
+          </ul>
+          <h5>海納川全人教育股份有限公司  •  資訊媒體組專案經理  OCT. 2022 - JUL. 2023</h5>
+          <ul>
+            <li>導入並管理 Google Workspace，提高工作流程效率和團隊協作。</li>
+            <li>規劃線上線下行銷策略，成功在三個月內吸引超過300個家庭，並定期向執行長報告進度。</li>
+            <li>優化媒體組工作流程：包含文案發想、素材蒐集、內容製作與上架、成效追蹤等事項之流程，新進同仁一周內即可上手。</li>
+            <li>引入 AI 工具提升影音素材製作速度，從每兩日一則提高到每日1-2則。</li>
+            <li>外語工作人才招募：協助進行全英文面試，以及教案內容檢視。</li>
+          </ul>
+          <h5>Snapask 知之有限公司 •  RoR junior後端工程師  MAR. 2022 – AUG. 2022</h5>
+          <ul>
+            <li>重新設計線上課程首頁 API，優化年級和科目篩選功能，讓使用者依照目前年級和科目更容易找到合適的課程。</li>
+            <li>優化後臺管理系統，尤其是線上課程CSV上傳功能，節省行銷部門人員編輯上傳課程的時間。</li>
+            <li>建立完整的實體講義寄送功能，使用 Rails 新建 address model table，客製化選擇香港、澳門及台灣的地址與郵遞區號。</li>
+            <li>使用 Rspec 和 Factorybot 進行單元測試，並透過 Travis CI 協助維護 code。</li>
+          </ul>
+          <h5>五倍紅寶石ASTRO CAMP 第9屆  •  學員  OCT. 2021 - JAN. 2022</h5>
+          <ul>
+            <li>從零開始學程式，涵蓋：HTML、CSS基礎觀念、Ruby基本語法、Rails mvc 架構及 restful api 風格、javascript ES6 與 DOM 概念等，並以專案實作方式使用 Rails套件。</li>
+          </ul>
+          <h5>台北市電腦商業同業公會  •  副規劃師  MAY. 2020 - SEP. 2021</h5>
+          <ul>
+            <li>執行經濟部工業局「AI STAR國際新創加速計畫」，接洽AWS、中華電信、sparklabs taipei合作。</li>
+            <li>參與經濟部工業局AI產業補助計畫，宣傳計畫資訊、審閱廠商計畫文件。</li>
+            <li>與資策會合辦「5G產業化服務驗證Spacethon」計畫，審查新創團隊技術並媒合需求單位，推廣5G技術應用。</li>
+            <li>特殊事蹟：經百位部門同仁票選，榮獲年度榜樣同仁。</li>
+          </ul>
+          <h5>元聲科技有限公司  •  電子商務專案經理  JUN. 2019 - FEB. 2020</h5>
+          <ul>
+            <li>建立萬華環南綜合市場線上生鮮販售渠道、規劃自有品牌。</li>
+            <li>協助傳統市場攤販經營電商通路，並負責於電商平台上架生鮮商品 (momo、pchome 等)。</li>
+          </ul>
+          <h5>臺北市政府資訊局  •  副研究員   SEP. 2016 - JUN. 2019</h5>
+          <ul>
+            <li>台北盃電競大賽採購案承辦人，負責RFP撰寫、執行招標流程及履約管理。</li>
+            <li>市長行程安排、市長致詞逐字稿撰寫、媒體採訪通知撰寫。</li>
+            <li>臺北市政府智慧支付平台─pay.taipei 專案成員，與業者(藍新、歐付寶、街口支付、pi錢包、台灣pay、橘子支付、台灣票據交換所、台新銀行、玉山銀行等)擬定行銷推廣活動、處理各業者與各局處串接payment gateway相關申請。</li>
+          </ul>
+        </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <p>&copy; 2024 Laichu. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
