@@ -21,8 +21,8 @@ header .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* 確保導航欄位於頁面其他元素的上方 */
-  background-color: #fff; /* 確保背景不透明，以覆蓋下方的內容 */
+  z-index: 1000;
+  background-color: #fff;
 }
 
 header .navbar-brand {
@@ -140,3 +140,24 @@ footer p {
   transform: translateY(-5px);
 }
 
+.btn-custom {
+  width: calc(100% - 10px); 
+  margin: 5px;
+}
+
+
+@media (max-width: 600px) {
+  .skill-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .skill-block {
+    width: 50%;
+    margin: 10px auto;
+  }
+  .skill-tile i {
+    font-size: 1.5rem;
+  }
+}

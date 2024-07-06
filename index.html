@@ -5,36 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laichu's Portfolio</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Your custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">GaryLai's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="#introduction">關於我</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-padding">
+      <div class="container">
+        <a class="navbar-brand" href="#">GaryLai's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#introduction">關於我</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">專案分享</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#past-experiences">工作經歷</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education-certification">學歷證照</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#projects">專案分享</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#past-experiences">工作經歷</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education-certification">學歷證照</a>
-        </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -51,7 +50,7 @@
       <p>樂於團隊合作，喜歡透過不同平台上線上課程。</p>
 
       <h5>習得技能</h5>
-      <div class="row">
+      <div class="row skill-container">
         <div class="col-md-3 col-sm-6 skill-block">
           <div class="skill-tile">
             <i class="fab fa-ruby"></i>
@@ -90,14 +89,8 @@
         </div>
         <div class="col-md-3 col-sm-6 skill-block">
           <div class="skill-tile">
-            <i class="fab fa-docker"></i>
-            <p>Basic Docker</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 skill-block">
-          <div class="skill-tile">
             <i class="fas fa-python"></i>
-            <p>Basic Python FastAPI</p>
+            <p>Python FastAPI</p>
           </div>
         </div>
       </div>
@@ -107,25 +100,36 @@
     <section id="projects" class="container mt-5">
       <h1>專案分享</h1>
       <p>以下是近期完成的專案，請參考（陸續更新中）。</p>
-      <!-- Example Project -->
       <div class="row">
+        <div class="col-md-4 my-card">
+          <div class="card">
+            <img class="card-img-top" src="/taipei-travel.gif" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">台北一日遊專案</h5>
+              <p class="card-text">使用 Python FastAPI 搭配 EC2 製作簡易旅遊購買服務。</p>
+              <a href="https://github.com/54Laichu/taipei-day-trip" class="btn btn-primary btn-custom">See Project</a>
+            </div>
+          </div>
+        </div>
+
         <div class="col-md-4 my-card">
           <div class="card">
             <img class="card-img-top" src="https://github.com/54Laichu/quality-of-life-survey/blob/main/demo-readme.gif?raw=true" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">互動式生活品質量表問卷</h5>
               <p class="card-text">利用 JS 設計卡片功能問卷，填寫完畢後計算結果。</p>
-              <a href="https://github.com/54Laichu/quality-of-life-survey" class="btn btn-primary">See Project</a>
+              <a href="https://github.com/54Laichu/quality-of-life-survey" class="btn btn-primary btn-custom">See Project</a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4 my-card">
           <div class="card">
             <img class="card-img-top" src="https://github.com/54Laichu/snakeGame/blob/main/snakeGame.gif?raw=true" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">貪食蛇遊戲</h5>
               <p class="card-text">利用 JS 設計類似貪食蛇遊戲，可以穿牆壁並吃食物。</p>
-              <a href="https://github.com/54Laichu/snakeGame" class="btn btn-primary">See Project</a>
+              <a href="https://github.com/54Laichu/snakeGame" class="btn btn-primary btn-custom">See Project</a>
             </div>
           </div>
         </div>
@@ -136,7 +140,7 @@
             <div class="card-body">
               <h5 class="card-title">乒乓球遊戲</h5>
               <p class="card-text">利用 JS Canvas 設計批乓球遊戲，可以改變難度。</p>
-              <a href="https://github.com/54Laichu/pingpongGame" class="btn btn-primary">See Project</a>
+              <a href="https://github.com/54Laichu/pingpongGame" class="btn btn-primary btn-custom">See Project</a>
             </div>
           </div>
         </div>
@@ -146,8 +150,8 @@
             <img class="card-img-top" src="https://github.com/54Laichu/radarMap/blob/main/radarMap.gif?raw=true" alt="Project Image">
             <div class="card-body">
               <h5 class="card-title">雷達圖</h5>
-              <p class="card-text">利用 JS Canvas 遊戲雷達圖，可以即時顯示圖表數值。</p>
-              <a href="https://github.com/54Laichu/radarMap" class="btn btn-primary">See Project</a>
+              <p class="card-text">利用 JS Canvas 設計雷達圖，可以即時顯示圖表數值。</p>
+              <a href="https://github.com/54Laichu/radarMap" class="btn btn-primary btn-custom">See Project</a>
             </div>
           </div>
         </div>
@@ -158,19 +162,24 @@
             <div class="card-body">
               <h5 class="card-title">Bootcamp 專案</h5>
               <p class="card-text">與組員利用 Rails 復刻 EZtable 線上訂位平台。</p>
-              <a href="https://github.com/ASTROCampNineLittle/EZeat" class="btn btn-primary">See Project</a>
+              <a href="https://github.com/ASTROCampNineLittle/EZeat" class="btn btn-primary btn-custom">See Project</a>
             </div>
           </div>
         </div>
+
+
     </section>
 
-    <!-- Work Experience Section -->
     <section id="past-experiences" class="container mt-5">
         <h1>工作經歷</h1>
         <div>
+          <h5>WeHelp Bootcamp 第五屆 •  學員  APR. 2024 - </h5>
+          <h5>台北市資訊局「臺北市數位好幫手」•  講師  APR. 2024 - </h5>
           <h5>萬通教育股份有限公司  •  講師  SEP. 2023 - </h5>
           <ul>
-            <li>線上教育平台專任講師。</li>
+            <li>經篩選成為 WeHelp 線上 Bootcamp 學員，學習內容涵蓋前後端開發(HTML、CSS、JavaScript Python FastAPI)、CI/CD、AWS 雲端架構、Docker，加深自身技術力</li>
+            <li>實體數位訓練課程講師，課程內容包含 ChatGPT 應用、微軟 Copilot 使用技巧等。</li>
+            <li> OneClass 線上教育平台專任講師。</li>
           </ul>
           <h5>海納川全人教育股份有限公司  •  資訊媒體組專案經理  OCT. 2022 - JUL. 2023</h5>
           <ul>
